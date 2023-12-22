@@ -50,8 +50,9 @@ const HeroSection = () => {
           smooth={true}
           offset={-100}
           duration={500}
-        ></Link>
-        <HiArrowDown size={35} className="animate-bounce" />
+        >
+          <HiArrowDown size={35} className="animate-bounce" />
+        </Link>
       </div>
     </section>
   );
