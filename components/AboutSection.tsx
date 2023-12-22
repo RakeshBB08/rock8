@@ -1,19 +1,26 @@
-import React from "react"
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
 
 const skills = [
+  { skill: "Python" },
+  { skill: "Javascript" },
+  { skill: "C++" },
+  { skill: "Node.js" },
+  { skill: "Socket.io" },
+  { skill: "Express.js" },
+  { skill: "Next.js" },
   { skill: "HTML" },
   { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Python" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
+  { skill: "MongoDB" },
+  { skill: "MySQL" },
+  { skill: "Docker" },
+  { skill: "Machine Learning" },
+  { skill: "Deep Learning" },
+  { skill: "Tableau" },
   { skill: "Git" },
   { skill: "GitHub" },
   { skill: "Jupyter Notebooks" },
-]
+];
 
 const AboutSection = () => {
   return (
@@ -30,24 +37,23 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Rakesh and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              based in Bengaluru, IN.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              I am pursuing B-Tech in Electronics and Communication Engineering
+              from PES University, Bengaluru.
             </p>
             <br />
             <p>
               I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              From reading, playing sports, traveling, listening to music, and
+              watching movies, to coding. I am always seeking new experiences
+              and love to keep myself engaged and learning new things.
             </p>
             <br />
             <p>
@@ -72,11 +78,11 @@ const AboutSection = () => {
                   >
                     {item.skill}
                   </p>
-                )
+                );
               })}
             </div>
             <Image
-              src="/hero-image.png"
+              src="/stud.png"
               alt=""
               width={325}
               height={325}
@@ -86,7 +92,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

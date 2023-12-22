@@ -1,34 +1,35 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Mutimodal Image Fsuion Using Deep Learning",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Image Fusion of IR Images and Depth images for enhancing image quality and extracting essential information.The fused images are used for anomaly detection of drivers and alerting them",
+    image: "/img_fusion.png",
+    github: "https://github.com/RakeshBB08/MachineLearning",
+    link: "https://github.com/RakeshBB08/MachineLearning/blob/master/earlyFusion.ipynb",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Yet Another X.com",
+    description:
+      'A seamless and visually stunning social media platform built leveraging modern tech like NodeJS,MongoDB, and Socket.io.Inspired by the vision of an "everything app," the platform boasts comprehensive functionalities including registration, login, tweet-like posts, real-time messaging, and notifications.',
+    image: "/twitterclone.png",
+    github: "https://github.com/RakeshBB08/twitter-clone",
+    link: "https://github.com/RakeshBB08/twitter-clone",
   },
   {
-    name: "Kator Family Photos",
+    name: "Forkify",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "A robust recipe discovery and meal planning app called Forkify, utilizing the Model-View-Controller (MVC) architecture for clean and maintainable code. Leveraged HTML, CSS, and JavaScript to create a userfriendly interface with search, recipe adding, bookmarking, and pagination features. Integrated the Forkify API seamlessly via AJAX for asynchronous data fetching, resulting in a smooth and responsive user experience.",
+    image: "/forkify.png",
+    github: "https://github.com/RakeshBB08/forkify-recipeMaster",
+    link: "https://forkify-rakeshbb.netlify.app",
   },
-]
+];
 
 const ProjectsSection = () => {
   return (
@@ -44,14 +45,14 @@ const ProjectsSection = () => {
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
+                  <div className="md:w-1/2">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
                         alt=""
                         width={1000}
                         height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className="mt-10 rounded-xl shadow-xl hover:opacity-70"
                       />
                     </Link>
                   </div>
@@ -78,12 +79,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
